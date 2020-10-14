@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import planet from "./planet.png"
+import "./App.css"
+import TopNav from "./components/TopNav/TopNav"
 
 function App() {
   return (
     <div className="App">
+      <TopNav/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={planet} className="App-logo" alt="logo"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          a space themed hackathon project from 713
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
