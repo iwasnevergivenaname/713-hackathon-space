@@ -1,0 +1,63 @@
+body {
+    position: relative;
+    width: 1024px;
+    height: 1366px;
+
+    background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);
+}
+
+.starimg {
+    position: absolute;
+    width: 156px;
+    height: 149px;
+    left: 70px;
+    top: 61px;
+}
+
+.logo {
+    position: absolute;
+    width: 401px;
+    height: 112.41px;
+    left: 554px;
+    top: 79px;
+}
+
+.earth {
+    position: absolute;
+    left: 28.13%;
+    right: 27.92%;
+    top: 26.08%;
+    bottom: 40.97%;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.mars {
+    position: absolute;
+    left: 73.44%;
+    right: 4.88%;
+    top: 26.18%;
+    bottom: 57.57%;
+
+    opacity: 0.9;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.venus {
+    position: absolute;
+    left: 4.95%;
+    right: 73.37%;
+    top: 26.21%;
+    bottom: 57.54%;
+
+    opacity: 0.9;
+    transform: matrix(1, 0, -0.01, 1, 0, 0);
+}
+
+.astronaut {
+    position: absolute;
+    left: 4.59%;
+    right: 80.37%;
+    top: 84.99%;
+    bottom: 1.17%;
+}

@@ -1,8 +1,8 @@
 import React from "react"
 
 function Question() {
-  const answerClick = () => {
-    console.log('clicked')
+  const answerClick = (className) => {
+    console.log(className)
   }
   return (
     <div>
