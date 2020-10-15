@@ -23,7 +23,7 @@ function Home() {
         <img src={create} alt="create"/>
       </div>
       <div className='learn'>
-        <img src={learn} alt="learn"/>
+        <a href="/planet"><img src={learn} alt="learn"/></a>
       </div>
       <div className='play'>
         <img src={play} alt=""/>
