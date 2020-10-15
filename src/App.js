@@ -2,7 +2,6 @@ import React, {Component} from "react"
 import planet from "./planet.png"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import "./App.css"
-import TopNav from "./components/TopNav/TopNav"
 import Planet from "./components/Planet/Planet"
 import Home from "./components/Home/Home"
 import Question from "./components/Question/Question"
@@ -12,7 +11,6 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <TopNav/>
           <Route exact path="/" component={Home}/>
           <div className="container">
             <Route exact path="/planet" component={Planet}/>

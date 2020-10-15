@@ -32,6 +32,21 @@ body {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+    .earth {
+        animation: earth-spin infinite 20s linear;
+    }
+}
+
+@keyframes earth-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .mars {
     position: absolute;
     left: 73.44%;
