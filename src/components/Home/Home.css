@@ -1,0 +1,73 @@
+.rocket {
+    position: absolute;
+    left: 3.48%;
+    right: 37.28%;
+    top: 15.52%;
+    bottom: 48.14%;
+
+    transform: rotate(2.26deg);
+}
+
+.logo {
+    position: absolute;
+    width: 480px;
+    height: 134.56px;
+    left: 267px;
+    top: 33px;
+}
+
+.create {
+    position: absolute;
+    width: 176.62px;
+    height: 168.51px;
+    left: 646.5px;
+    top: 331px;
+
+    transform: rotate(10.77deg);
+}
+
+.learn {
+    position: absolute;
+    width: 176.62px;
+    height: 168.51px;
+    left: 452.5px;
+    top: 577px;
+
+    transform: rotate(10.77deg);
+}
+
+.play {
+    position: absolute;
+    width: 176.62px;
+    height: 168.51px;
+    left: 104.5px;
+    top: 768px;
+
+    transform: rotate(10.77deg);
+}
+
+.moon {
+    position: absolute;
+    left: -6.74%;
+    right: -8.89%;
+    top: 86.38%;
+    bottom: -3.57%;
+
+    mix-blend-mode: color-dodge;
+}
+
+.speech {
+    position: absolute;
+    width: 292px;
+    height: 292px;
+    left: 728px;
+    top: 468px;
+}
+
+.astronaut {
+    position: absolute;
+    left: 51.17%;
+    right: 1.48%;
+    top: 53.37%;
+    bottom: 3.07%;
+}
