@@ -100,11 +100,26 @@
     position: absolute;
     left: 32.16%;
     right: 25.93%;
-    top: 26.97%;
+    top: 20.97%;
     bottom: 43.9%;
 
     filter: drop-shadow(11px 9px 19px rgba(0, 0, 0, 0.5));
     transform: rotate(-2.45deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .fire {
+        animation: flame infinite 10s linear;
+    }
+}
+
+@keyframes flame {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-25px);
+    }
 }
 
 .correct {

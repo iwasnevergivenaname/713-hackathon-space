@@ -1,11 +1,16 @@
-body {
-    /*position: relative;*/
-    /*width: auto;*/
-    /*height: 1466px;*/
-    /*height: 100%;*/
 
-    /*background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);*/
-    background-image: url(bg.png);
+.planet-page-moon{
+    position: absolute;
+    left: -4.98%;
+    right: -10.65%;
+    top: 83.75%;
+    bottom: -0.94%;
+
+    mix-blend-mode: darken;
+}
+
+html {
+  background-image: url(bg.png);
 }
 
 .guy {
@@ -114,7 +119,7 @@ body {
     position: absolute;
     width: 154px;
     height: 66px;
-    left: 84px;
+    left: 54px;
     top: 594px;
 
     font-family: McLaren;
@@ -154,12 +159,3 @@ body {
     top: 969px;
 }
 
-.planet-page-moon {
-    position: absolute;
-    left: -4.98%;
-    right: -10.65%;
-    top: 83.75%;
-    bottom: -0.94%;
-
-    mix-blend-mode: color-dodge;
-}
