@@ -55,6 +55,9 @@ const Correct = (props) => {
       <div className='correct'>
         <img src={correct} alt="correct"/>
       </div>
+      <div className='correct-page-moon'>
+        <img src={moon} alt="moon"/>
+      </div>
       <div className='first'>
         <img src={randomAlien(randomNumOne)} alt=""/>
       </div>
@@ -64,9 +67,7 @@ const Correct = (props) => {
       <div className='third'>
         <img src={randomAlien(randomNumThree)} alt=""/>
       </div>
-      <div className='moon'>
-        <img src={moon} alt="moon"/>
-      </div>
+
     </>
   )
 }

@@ -1,11 +1,16 @@
-body {
-    /*position: relative;*/
-    /*width: auto;*/
-    /*height: 1466px;*/
-    /*height: 100%;*/
 
-    /*background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);*/
-    background-image: url(bg.png);
+.planet-page-moon{
+    position: absolute;
+    left: -4.98%;
+    right: -10.65%;
+    top: 83.75%;
+    bottom: -0.94%;
+
+    mix-blend-mode: darken;
+}
+
+html {
+  background-image: url(bg.png);
 }
 
 .guy {
@@ -70,6 +75,7 @@ body {
 
 .right-planet {
     position: absolute;
+    height: 2000px;
     left: 73.44%;
     right: 4.88%;
     top: 26.18%;
@@ -79,7 +85,7 @@ body {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.marstext {
+.righttext {
     position: absolute;
     width: 134px;
     height: 66px;
@@ -109,11 +115,11 @@ body {
     transform: matrix(1, 0, -0.01, 1, 0, 0);
 }
 
-.venustext {
+.lefttext {
     position: absolute;
     width: 154px;
     height: 66px;
-    left: 84px;
+    left: 54px;
     top: 594px;
 
     font-family: McLaren;
@@ -128,12 +134,28 @@ body {
     opacity: 0.9;
 }
 
-.planet-page-moon {
+.maintext {
     position: absolute;
-    left: -4.98%;
-    right: -10.65%;
-    top: 83.75%;
-    bottom: -0.94%;
+    width: 154px;
+    height: 66px;
+    left: 443px;
+    top: 875px;
 
-    mix-blend-mode: screen;
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
 }
+
+.facts {
+    position: absolute;
+    width: 496px;
+    height: 77px;
+    left: 271px;
+    top: 969px;
+}
+

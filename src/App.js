@@ -1,12 +1,13 @@
 import React, {Component} from "react"
-import planet from "./planet.png"
+// import planet from "./planet.png"
 import {BrowserRouter as Router, Route} from "react-router-dom"
 import "./App.css"
-import Planet from "./components/Planet/Planet"
+// import Planet from "./components/Planet/Planet"
 import Home from "./components/Home/Home"
 import Question from "./components/Question/Question"
 import Correct from "./components/Correct/Correct"
 import InCorrect from './components/InCorrect/InCorrect'
+import PlanetPage from "./components/Planet/Planet"
 
 class App extends Component {
   render() {
@@ -15,7 +16,7 @@ class App extends Component {
         <div className="App">
           <Route exact path="/" component={Home}/>
           <div className="container">
-            <Route exact path="/planet" component={Planet}/>
+            <Route exact path="/learn" component={PlanetPage}/>
             <Route exact path="/play" component={Question}/>
             <Route exact path="/correct" component={Correct}/>
             <Route exact path="/incorrect" component={InCorrect}/>
