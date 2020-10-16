@@ -135,5 +135,5 @@ body {
     top: 83.75%;
     bottom: -0.94%;
 
-    mix-blend-mode: screen;
+    mix-blend-mode: color-dodge;
 }
