@@ -10,7 +10,12 @@ import rocket from "./rocket.png"
 import venus from './venus.png'
 import earth from './earth.png'
 import mars from './mars.png'
-import marstxt from './marstxt.png'
+import saturn from './saturn.png'
+import sun from './Sun.png'
+import uranus from './uranus.png'
+import mercury from './mercury.png'
+import neptune from './neptune.png'
+import moonsmall from './moonsmall.png'
 import q1 from './q001.png'
 
 function Question(props) {
@@ -21,15 +26,14 @@ function Question(props) {
     wordsValues();
     console.log(words)
     console.log(synonyms)
-    console.log(buttonOne)
   }, [] )
 
-  const [buttonOne, setButtonOne] = useState()
-  const [buttonTwo, setButtonTwo] = useState()
-  const [buttonThree, setButtonThree] = useState()
+  const [buttonOne, setButtonOne] = useState([])
+  const [buttonTwo, setButtonTwo] = useState([])
+  const [buttonThree, setButtonThree] = useState([])
   const [winningValue, setWinningValue] = useState([])
-  const [correct, setCorrect] = useState()
-  const [incorrect, setIncorrect] = useState()
+  const [correct, setCorrect] = useState([])
+  const [incorrect, setIncorrect] = useState([])
 
   let gameWords = [];
   let words;
@@ -38,7 +42,7 @@ function Question(props) {
     "earth",
     "sun",
     "mars",
-    "pluto",
+    "neptune",
     "venus",
     "uranus",
     "moon",
@@ -49,7 +53,7 @@ function Question(props) {
     "Which planet do you live on?",
     "Which planet is Earth's star?",
     "mars",
-    "Which planet is a dwarf planet?",
+    "Which planet is furthest from the sun?",
     "Which planet spins clockwise?",
     "Which planet has 27 moons?",
     "What planet is Earth's moon?",
@@ -57,12 +61,26 @@ function Question(props) {
     "Which planet is the smallest in our galaxy?"
   ]
 
+  let imgsrcs = [
+    earth,
+    sun,
+    mars,
+    neptune,
+    venus,
+    uranus,
+    moonsmall,
+    saturn,
+    mercury
+
+  ]
+
   //is being called in button function
   function gamePlay(target){  //if button choice is the right value, increase score, always change user, always change words and relog scores, and prompt next user.
-    if (target.textContent===winningValue[0]){
+    console.log(target.src)
+    if (target.alt===winningValue[0]){
         setCorrect('true')
         props.history.push('/correct')
-      } else if(target.textContent!==winningValue[0]){
+      } else if(target.alt!==winningValue[0]){
         setIncorrect('true')
         props.history.push('/incorrect')
     }
@@ -78,25 +96,22 @@ const answerClick = (event) => {
 
 //
 
-
 function wordsValues(){ //creates array with words, for each round logs 4 random words into the array, using the index value of the word, matches the synonym, returns word, value and synonym into game words.
     gameWords = [];     //also finds a random synonym to create the synonym clue. logs values into buttons.
-    for (let i = 0; i < 4; i ++){
+    for (let i = 0; i < 3; i ++){
     let word = words[Math.floor(Math.random()*words.length)];
     let index = words.indexOf(word);
     let synonym = synonyms[index];
-    gameWords[i]=[word , index , synonym];
+    let imgsrc = imgsrcs[index]
+    gameWords[i]=[word , index , synonym, imgsrc];
     console.log(gameWords)
     };
-    //synonym.textContent = (winningValue[2])
     
 //buttons
-    setButtonOne(gameWords[0][0]);
-    setButtonTwo(gameWords[1][0]);
-    setButtonThree(gameWords[2][0]);
+    setButtonOne(gameWords[0]);
+    setButtonTwo(gameWords[1]);
+    setButtonThree(gameWords[2]);
     setWinningValue(gameWords[Math.floor(Math.random()*gameWords.length)])
-    
-    
 };
 
 
@@ -109,17 +124,16 @@ function wordsValues(){ //creates array with words, for each round logs 4 random
         <a href="../"><img src={logo} alt="logo"/></a>
       </div>
       <div className='q1'>
-        <img src={q1} alt="q1"/>
+        <h1 alt={winningValue[2]}>{winningValue[2]}</h1>
       </div>
       <div className='one' onClick={answerClick}>
-        <img src={venus} alt="venus"/>
+        <img src={buttonOne[3]} alt={buttonOne[0]}/>
       </div>
-      <div className='two' onClick={answerClick}>
-        <img src={earth} alt="earth"/>
+      <div className='two' onClick={answerClick} >
+        <img src={buttonTwo[3]} alt={buttonTwo[0]}/>
       </div>
       <div className='three' onClick={answerClick}>
-        <img src={mars} alt="mars"/>
-        <img src={marstxt} alt=""/>
+        <img src={buttonThree[3]} alt={buttonThree[0]}/>
       </div>
       <div className='moon'>
         <img src={moon} alt="moon"/>
