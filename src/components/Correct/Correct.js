@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect} from "react"
 import './Correct.css'
 import bluecenti from './bluecenti.png'
 import bluesquid from './bluesquid.png'
@@ -15,7 +15,7 @@ import yellowhorn from './yellowhorn.png'
 
 let aliens = [bluecenti, bluesquid, greenocto, greenoneeoe, orangedoof, redhorn, yellowhorn]
 
-const Correct = () => {
+const Correct = (props) => {
   let randomNumOne = Math.floor(Math.random() * aliens.length)
   let randomNumTwo = Math.floor(Math.random() * aliens.length)
   let randomNumThree = Math.floor(Math.random() * aliens.length)
@@ -37,6 +37,9 @@ const Correct = () => {
       return yellowhorn
     }
   }
+  useEffect(() =>{
+    setTimeout(() =>props.history.push('/play'), (5000))
+})
 
   return (
     <>

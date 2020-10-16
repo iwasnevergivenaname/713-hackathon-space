@@ -6,6 +6,7 @@ import "./App.css"
 import Home from "./components/Home/Home"
 import Question from "./components/Question/Question"
 import Correct from "./components/Correct/Correct"
+import InCorrect from './components/InCorrect/InCorrect'
 import PlanetPage from "./components/Planet/Planet"
 
 class App extends Component {
@@ -18,9 +19,7 @@ class App extends Component {
             <Route exact path="/learn" component={PlanetPage}/>
             <Route exact path="/play" component={Question}/>
             <Route exact path="/correct" component={Correct}/>
-            {/*<Route exact path="/exercises/:id" component={ExerciseId}/>*/}
-            {/*<Route exact path="/playlist/:id" component={PlaylistId}/>*/}
-            {/* <NotFoundPage /> */}
+            <Route exact path="/incorrect" component={InCorrect}/>
           </div>
         </div>
       </Router>
