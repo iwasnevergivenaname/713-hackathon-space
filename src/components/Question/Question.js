@@ -7,15 +7,15 @@ import logo from "./logo.png"
 import play from "./play.png"
 import moon from "./moon.png"
 import rocket from "./rocket.png"
-import venus from './venus.png'
+import venus from './venusq.png'
 import earth from './earth.png'
-import mars from './mars.png'
-import saturn from './saturn.png'
-import sun from './Sun.png'
-import uranus from './uranus.png'
-import mercury from './mercury.png'
+import mars from './marsq.png'
+import saturn from './saturnq.png'
+import sun from './sunq.png'
+import uranus from './uransq.png'
+import mercury from './mercq.png'
 import neptune from './neptune.png'
-import moonsmall from './moonsmall.png'
+import moonsmall from './moonq.png'
 import q1 from './q001.png'
 
 function Question(props) {

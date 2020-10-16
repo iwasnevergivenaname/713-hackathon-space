@@ -41,7 +41,7 @@
     width: 223.66px;
     height: 305px;
     left: 120px;
-    top: 690px;
+    top: 60%;
 }
 
 .two {
@@ -49,12 +49,12 @@
     width: 223.03px;
     height: 304.35px;
     left: 399px;
-    top: 690.65px;
+    top: 60%;
 }
 
 .three {
     position: absolute;
-    top: 695px;
+    top: 60%;
     left: 66.21%;
     right: 12.11%;
     bottom: 33.04%;
@@ -67,8 +67,23 @@
     position: absolute;
     left: -1.67%;
     right: 90.13%;
-    top: 71.5%;
+    top: 100.5%;
     bottom: -19.3%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rocket {
+        animation: rocket-fly infinite 11s linear;
+    }
+}
+
+@keyframes rocket-fly {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-1670px);
+    }
 }
 
 .moon {
