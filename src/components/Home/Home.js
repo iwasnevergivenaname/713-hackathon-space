@@ -26,7 +26,7 @@ function Home() {
         <a href="/planet"><img src={learn} alt="learn"/></a>
       </div>
       <div className='play'>
-        <img src={play} alt=""/>
+        <a href="/play"><img src={play} alt="play"/></a>
       </div>
       <div className='moon'>
         <img src={moon} alt="moon"/>

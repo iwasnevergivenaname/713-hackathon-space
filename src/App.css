@@ -2,14 +2,6 @@ body{
   background-color: #2e3752;
 }
 
-.answer-one, .answer-two, .answer-three, .answer-four {
-  margin: 5%;
-  width: 25%;
-  border: 1px solid black;
-  flex-direction: row;
-}
-
-
 .App {
   text-align: center;
 
@@ -37,16 +29,16 @@ body{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/*.App-link {*/
+/*  color: #61dafb;*/
+/*}*/
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*@keyframes App-logo-spin {*/
+/*  from {*/
+/*    transform: rotate(0deg);*/
+/*  }*/
+/*  to {*/
+/*    transform: rotate(360deg);*/
+/*  }*/
+/*}*/
 
