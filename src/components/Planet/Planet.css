@@ -70,6 +70,7 @@ body {
 
 .right-planet {
     position: absolute;
+    height: 2000px;
     left: 73.44%;
     right: 4.88%;
     top: 26.18%;
@@ -79,7 +80,7 @@ body {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.marstext {
+.righttext {
     position: absolute;
     width: 134px;
     height: 66px;
@@ -109,7 +110,7 @@ body {
     transform: matrix(1, 0, -0.01, 1, 0, 0);
 }
 
-.venustext {
+.lefttext {
     position: absolute;
     width: 154px;
     height: 66px;
@@ -126,6 +127,31 @@ body {
     color: #FFFFFF;
 
     opacity: 0.9;
+}
+
+.maintext {
+    position: absolute;
+    width: 154px;
+    height: 66px;
+    left: 443px;
+    top: 875px;
+
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 69px;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+}
+
+.facts {
+    position: absolute;
+    width: 496px;
+    height: 77px;
+    left: 271px;
+    top: 969px;
 }
 
 .planet-page-moon {

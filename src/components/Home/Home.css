@@ -1,3 +1,4 @@
+
 .rocketship {
     position: absolute;
     left: 3.48%;
@@ -6,6 +7,21 @@
     bottom: 48.14%;
 
     transform: rotate(2.26deg);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .rocketship {
+        animation: rocket-fly infinite 10s linear;
+    }
+}
+
+@keyframes rocket-fly {
+    from {
+        transform: perspective(0px);
+    }
+    to {
+        transform: translateX(70px);
+    }
 }
 
 .front-page-logo {
@@ -46,15 +62,6 @@
     transform: rotate(10.77deg);
 }
 
-.home-page-moon {
-    position: absolute;
-    left: -6.74%;
-    right: -8.89%;
-    top: 86.38%;
-    bottom: -3.57%;
-
-    mix-blend-mode: color-dodge;
-}
 
 .speech {
     position: absolute;
@@ -70,4 +77,31 @@
     right: 1.48%;
     top: 53.37%;
     bottom: 3.07%;
+}
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+/*    .astronaut {*/
+/*        animation: guy-bounce infinite 10s linear;*/
+/*    }*/
+/*}*/
+
+/*@keyframes guy-bounce {*/
+/*    from {*/
+/*        transform: translateY(0px);*/
+/*    }*/
+/*    to {*/
+/*        transform: translateY(10px);*/
+/*    }*/
+/*}*/
+
+.home-page-moon {
+    /*background-image: url(homepagemoon.png);*/
+    /*background-repeat: no-repeat;*/
+    position: absolute;
+    left: -6.74%;
+    right: -8.89%;
+    top: 86.38%;
+    bottom: -3.57%;
+
+    mix-blend-mode: darken;
 }

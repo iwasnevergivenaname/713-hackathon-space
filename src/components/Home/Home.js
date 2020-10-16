@@ -5,10 +5,10 @@ import logo from './logo.png'
 import create from './Create.png'
 import learn from './learn.png'
 import play from './play.png'
-import moon from './moon.png'
+import moon from './homepagemoon.png'
 import astronaut from './astronaut.png'
 import speech from './speech.png'
-import planet from "../../planet.png"
+// import planet from "../../planet.png"
 
 function Home() {
   return (
@@ -23,7 +23,7 @@ function Home() {
         <img src={create} alt="create"/>
       </div>
       <div className='learn'>
-        <a href="/planet"><img src={learn} alt="learn"/></a>
+        <a href="/learn"><img src={learn} alt="learn"/></a>
       </div>
       <div className='play-star'>
         <a href="/play"><img src={play} alt="play star"/></a>
