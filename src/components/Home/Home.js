@@ -13,11 +13,11 @@ import planet from "../../planet.png"
 function Home() {
   return (
     <>
-      <div className='logo'>
-        <img src={logo} alt="logo"/>
+      <div className='front-page-logo'>
+        <img src={logo} alt="front page logo"/>
       </div>
-      <div className='rocket'>
-        <img src={rocket} alt="rocket"/>
+      <div className='rocketship'>
+        <img src={rocket} alt="rocketship"/>
       </div>
       <div className='create'>
         <img src={create} alt="create"/>
@@ -25,8 +25,8 @@ function Home() {
       <div className='learn'>
         <a href="/planet"><img src={learn} alt="learn"/></a>
       </div>
-      <div className='play'>
-        <img src={play} alt=""/>
+      <div className='play-star'>
+        <a href="/play"><img src={play} alt="play star"/></a>
       </div>
       <div className='moon'>
         <img src={moon} alt="moon"/>

@@ -9,37 +9,47 @@ import venus from './venus.png'
 import venustext from './venustext.png'
 import astronaut from './astronaut.png'
 import moon from './moon.png'
+import rectangle from './Rectangle 12.png'
 
 
 export default function Planet() {
 
+  const planetSwitch = (planet) => {
+    if (planet.value.target === 'earth') {
+
+    }
+  }
+
   return (
     <>
       <div className='star'>
-        <img src={play} alt="star" className='starimg'/>
+        <a href="/play"><img src={play} alt="star" className='starimg'/></a>
       </div>
-      <div className='logo'>
+      <div className='planet-page-logo'>
         <a href="../"><img src={logo} alt="logo"/></a>
       </div>
-      <div className='venus'>
-        <img src={venus} alt="venus"/>
+      <div className='left-planet'>
+        <img src={venus} alt=""/>
       </div>
       <div className='venustext'>
-        <img src={venustext} alt=""/>
+        <img src={venustext} alt="venus text"/>
       </div>
-      <div className='earth'>
+      <div className='main-planet'>
         <img src={earth} alt="earth"/>
       </div>
-      <div className='mars'>
+      <div className='textshadow'>
+        <img src={rectangle} alt="text shadow"/>
+      </div>
+      <div className='right-planet'>
         <img src={mars} alt="mars"/>
       </div>
       <div className='marstext'>
-        <img src={marstext} alt=""/>
+        <img src={marstext} alt="mars text"/>
       </div>
-      <div className='astronaut'>
-        <img src={astronaut} alt=""/>
+      <div className='guy'>
+        <img src={astronaut} alt="astronaut"/>
       </div>
-      <div className='moon'>
+      <div className='planet-page-moon'>
         <img src={moon} alt="moon"/>
       </div>
     </>

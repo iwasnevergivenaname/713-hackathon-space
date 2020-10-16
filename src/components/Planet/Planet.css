@@ -1,17 +1,19 @@
 body {
-    position: relative;
-    width: 1024px;
-    height: 1366px;
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: 1466px;*/
+    /*height: 100%;*/
 
-    background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);
+    /*background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);*/
+    background-image: url(bg.png);
 }
 
-.astronaut {
+.guy {
     position: absolute;
     left: 4.59%;
     right: 80.37%;
     top: 84.99%;
-    /*bottom: 1.17%;*/
+    bottom: 1.17%;
 }
 
 .starimg {
@@ -19,18 +21,18 @@ body {
     width: 156px;
     height: 149px;
     left: 70px;
-    top: 61px;
+    top: 11px;
 }
 
-.logo {
+.planet-page-logo {
     position: absolute;
     width: 401px;
     height: 112.41px;
-    left: 554px;
+    left: 400px;
     top: 79px;
 }
 
-.earth {
+.main-planet {
     position: absolute;
     left: 28.13%;
     right: 27.92%;
@@ -40,13 +42,24 @@ body {
     transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
+.textshadow {
+    position: absolute;
+    width: 540px;
+    height: 311px;
+    left: 245px;
+    top: 772px;
+
+    background: linear-gradient(180deg, rgba(32, 28, 75, 0) 0%, #201C4B 100%);
+    border-radius: 8px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-    .earth {
-        animation: earth-spin infinite 20s linear;
+    .main-planet {
+        animation: planet-spin infinite 20s linear;
     }
 }
 
-@keyframes earth-spin {
+@keyframes planet-spin {
     from {
         transform: rotate(0deg);
     }
@@ -55,7 +68,7 @@ body {
     }
 }
 
-.mars {
+.right-planet {
     position: absolute;
     left: 73.44%;
     right: 4.88%;
@@ -85,7 +98,7 @@ body {
     opacity: 0.9;
 }
 
-.venus {
+.left-planet {
     position: absolute;
     left: 4.95%;
     right: 73.37%;
@@ -115,7 +128,7 @@ body {
     opacity: 0.9;
 }
 
-.moon {
+.planet-page-moon {
     position: absolute;
     left: -4.98%;
     right: -10.65%;

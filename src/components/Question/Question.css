@@ -1,0 +1,89 @@
+/*.body {*/
+/*    position: relative;*/
+/*    width: 1024px;*/
+/*    height: 100%;*/
+
+/*    background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);*/
+/*}*/
+
+.play {
+    position: absolute;
+    width: 156px;
+    height: 149px;
+    left: 74px;
+    top: 44px;
+}
+
+.logo {
+    position: absolute;
+    width: 401px;
+    height: 112.41px;
+    left: 554px;
+    top: 79px;
+}
+
+.q1 {
+    position: absolute;
+    width: 696px;
+    height: 254px;
+    left: 163px;
+    top: 347px;
+
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 115.1%;
+    /* or 83px */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF;
+}
+
+.one {
+    position: absolute;
+    width: 223.66px;
+    height: 305px;
+    left: 120px;
+    top: 690px;
+}
+
+.two {
+    position: absolute;
+    width: 223.03px;
+    height: 304.35px;
+    left: 399px;
+    top: 690.65px;
+}
+
+.three {
+    position: absolute;
+    top: 695px;
+    left: 66.21%;
+    right: 12.11%;
+    bottom: 33.04%;
+
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+
+.rocket {
+    position: absolute;
+    left: -1.67%;
+    right: 90.13%;
+    top: 71.5%;
+    bottom: -19.3%;
+}
+
+.moon {
+    position: absolute;
+    left: -7.32%;
+    right: -8.3%;
+    top: 84.19%;
+    bottom: -1.38%;
+
+    mix-blend-mode: screen;
+}
+

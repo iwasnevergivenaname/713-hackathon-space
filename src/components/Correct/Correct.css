@@ -1,0 +1,131 @@
+.star {
+    position: absolute;
+    width: 156px;
+    height: 149px;
+    left: 70px;
+    top: 61px;
+}
+
+.logo {
+    position: absolute;
+    width: 401px;
+    height: 112.41px;
+    left: 554px;
+    top: 79px;
+}
+
+.fire {
+    position: absolute;
+    left: 32.16%;
+    right: 25.93%;
+    top: 26.97%;
+    bottom: 43.9%;
+
+    filter: drop-shadow(11px 9px 19px rgba(0, 0, 0, 0.5));
+    transform: rotate(-2.45deg);
+}
+
+.correct {
+    position: absolute;
+    width: 436px;
+    height: 83px;
+    left: 277px;
+    top: 807px;
+
+    font-family: McLaren;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 115.1%;
+    /* identical to box height, or 83px */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+
+    color: #FFFFFF;
+
+    text-shadow: 6px 6px 7px rgba(0, 0, 0, 0.38);
+}
+
+.first {
+    position: absolute;
+    left: 14.45%;
+    right: 66.26%;
+    top: 80.66%;
+    bottom: 4.8%;
+}
+
+.second {
+    position: absolute;
+    left: 37.65%;
+    right: 40.71%;
+    top: 73.65%;
+    bottom: 13.64%;
+    /*opacity: 100%;*/
+}
+
+.third {
+    position: absolute;
+    left: 71.39%;
+    right: 15.92%;
+    top: 80.27%;
+    bottom: 5.31%;
+    opacity: inherit;
+}
+
+.moon {
+    position: absolute;
+    left: -7.32%;
+    right: -8.3%;
+    top: 84.19%;
+    bottom: -1.38%;
+
+    mix-blend-mode: screen;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .first {
+        animation: first-bounce infinite 10s linear;
+    }
+}
+
+@keyframes first-bounce {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-25px);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .second {
+        animation: second-float infinite 20s linear;
+    }
+}
+
+@keyframes second-float {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .third {
+        animation: third-float infinite 120s linear;
+    }
+}
+
+@keyframes third-float {
+    from {
+        transform: rotate(-20deg);
+    }
+    to {
+        transform: rotate(-60deg);
+    }
+}
+

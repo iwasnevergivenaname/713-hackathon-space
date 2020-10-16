@@ -5,6 +5,7 @@ import "./App.css"
 import Planet from "./components/Planet/Planet"
 import Home from "./components/Home/Home"
 import Question from "./components/Question/Question"
+import Correct from "./components/Correct/Correct"
 
 class App extends Component {
   render() {
@@ -14,7 +15,8 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <div className="container">
             <Route exact path="/planet" component={Planet}/>
-            <Route exact path="/question" component={Question}/>
+            <Route exact path="/play" component={Question}/>
+            <Route exact path="/correct" component={Correct}/>
             {/*<Route exact path="/exercises/:id" component={ExerciseId}/>*/}
             {/*<Route exact path="/playlist/:id" component={PlaylistId}/>*/}
             {/* <NotFoundPage /> */}
