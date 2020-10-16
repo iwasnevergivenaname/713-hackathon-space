@@ -1,10 +1,11 @@
 body {
-    position: relative;
-    width: 1024px;
-    height: 1466px;
+    /*position: relative;*/
+    /*width: auto;*/
+    /*height: 1466px;*/
     /*height: 100%;*/
 
-    background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);
+    /*background: radial-gradient(50% 50% at 50% 50%, rgba(1, 36, 105, 0) 19.27%, rgba(1, 36, 105, 0) 100%), linear-gradient(180deg, rgb(68, 38, 85) 22.4%, #022e87 100%);*/
+    background-image: url(bg.png);
 }
 
 .guy {
@@ -20,14 +21,14 @@ body {
     width: 156px;
     height: 149px;
     left: 70px;
-    top: 61px;
+    top: 11px;
 }
 
-.logo {
+.planet-page-logo {
     position: absolute;
     width: 401px;
     height: 112.41px;
-    left: 554px;
+    left: 400px;
     top: 79px;
 }
 
@@ -127,7 +128,7 @@ body {
     opacity: 0.9;
 }
 
-.moon {
+.planet-page-moon {
     position: absolute;
     left: -4.98%;
     right: -10.65%;

@@ -25,7 +25,7 @@ export default function Planet() {
       <div className='star'>
         <a href="/play"><img src={play} alt="star" className='starimg'/></a>
       </div>
-      <div className='logo'>
+      <div className='planet-page-logo'>
         <a href="../"><img src={logo} alt="logo"/></a>
       </div>
       <div className='left-planet'>
@@ -49,7 +49,7 @@ export default function Planet() {
       <div className='guy'>
         <img src={astronaut} alt="astronaut"/>
       </div>
-      <div className='moon'>
+      <div className='planet-page-moon'>
         <img src={moon} alt="moon"/>
       </div>
     </>

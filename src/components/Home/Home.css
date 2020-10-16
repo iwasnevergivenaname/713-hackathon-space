@@ -1,4 +1,4 @@
-.rocket {
+.rocketship {
     position: absolute;
     left: 3.48%;
     right: 37.28%;
@@ -8,7 +8,7 @@
     transform: rotate(2.26deg);
 }
 
-.logo {
+.front-page-logo {
     position: absolute;
     width: 480px;
     height: 134.56px;
@@ -36,7 +36,7 @@
     transform: rotate(10.77deg);
 }
 
-.play {
+.play-star {
     position: absolute;
     width: 176.62px;
     height: 168.51px;
